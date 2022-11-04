@@ -1,79 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Utama</title>
-    <style> 
-        h1{
-            font-weight: bold;
-            font-family: 'roboto', sans-serif;
-            color: #eaeaea;
-            //*background-color: gold;*//
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            font-family: 'robot', sans-serif;
-        }
+    <title>complete responsive coffee shop website design</title>
 
-        body {
-            font-family: 'roboto', sans-serif;
-            margin: 30px;
-            width: 100vw;
-            height: 100vh;
-            background-size: cover;
-            overflow: hidden;
-            background-image: url('daniel-leone-v7daTKlZzaw-unsplash.jpg');
-        }
-        p{
-            color: white;
-            font-family: 'roboto', sans-serif;
-            font-weight: 500;
-        }
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-        button {
-            background-color: transparent;
-            border-radius: 30px;
-            border-color: white;
-            margin: 5px;
-            padding: 10px;
-            color: white;
-        }
-        button:hover{
-            background-color: #eaeaea;
-        }
-        h4{
-            color: whitesmoke;
-            font-weight: bold;
-            font-family: cursive;
-        }
-     </style> 
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
 
-   
 </head>
-
 <body>
-    <div head>
-    <h1 align="center"> KOS KOSAN </h1>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="">
+        
+    </a>
+    <h1 class="hayo">IQ7. Corporation</h1>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
     </div>
 
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
 
-    <p>SISTEM INFORMASI KOS KOSAN</p>
-    <br>
-    
-    <button><a href="daftar_kos.html">DAFTAR KOS</a></button>
-  
-    
-    <br>
-    <br>
-    <h4>&copy Habib kurniawan</h4>
-    <h4>KELAS: 11 RPL 2</h4>
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-1.png" alt="">
+            <div class="content">
+                <h3>White Roast</h3>
+                <div class="price">IDR 50.000/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-2.png" alt="">
+            <div class="content">
+                <h3>Max Ligh Roast</h3>
+                <div class="price">IDR 50.000/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-3.png" alt="">
+            <div class="content">
+                <h3>Green & Max ligh Roast</h3>
+                <div class="price">IDR 65.000/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-4.png" alt="">
+            <div class="content">
+                <h3>Ligh Roast</h3>
+                <div class="price">IDR 55.000/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Awali Harimu dengan Secangkir Kopi</h3>
+        <p>Jadikan kopi teman terbaikmu, pilih jenis kopi pilihanmu dan dapatkan sekarang juga, ada promo diskon hingga 50% hanya tersedia di @caffena, jangan lewatkan promonya ya.</p>
+        <a href="#" class="btn">get yours now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> us </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/about-img.jpeg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Apa yang membuat coffee kami spesial?</h3>
+            <p>Kamu nanyaaak ?</p>
+            <p>Yaudh biar aku kasih tau yaa</p>
+            <p>Cafena menyajikan biji kopi terbaik se Alam semesta yang di impor langsung dari Pluto.</p>
+            <p>Tidak hanya itu karyawan kami akan melayani kamu sampai kamu benar-benar puas dengan menikmati kopi kami. Karena Karyawan yang kami Gaji 45M/hari akan bertanggung jawab dengan kepuasan Kamu.</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> our <span>menu</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/menu-1.png" alt="">
+            <h3>Flat White</h3>
+            <div class="price">IDR 25.000 <span>IDR 50.000</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-2.png" alt="">
+            <h3>Mocha</h3>
+            <div class="price">IDR 25.000 <span>IDR 50.000</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-3.png" alt="">
+            <h3>Macchiato</h3>
+            <div class="price">IDR 25.000 <span>IDR 50.000</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-4.png" alt="">
+            <h3>Cappuccino</h3>
+            <div class="price">IDR 25.000 <span>IDR 50.000</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-5.png" alt="">
+            <h3>Americano</h3>
+            <div class="price">IDR 25.000 <span>IDR 50.000</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/menu-6.png" alt="">
+            <h3>Espresso</h3>
+            <div class="price">IDR 25.000 <span>IDR 50.000</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-1.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Nicaragua coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">IDR 35.000 <span>IDR 45.000</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-2.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Colombia coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">IDR 25.000 <span>IDR 30.000</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+                <img src="images/product-3.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Peru coffee</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">IDR 15.000 <span>IDR 20.000</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p> "Kopi tanpa gula adalah kopi yang jujur. Dia tak perlu bermanis-manis di mulut. Tanpa ragu menunjukkan jati diri pada sang peminumnya"</p>
+            <p>Instagram: @habib.krnwnn</p>
+            <img src="images/pic-4.png" class="user" alt="">
+            <h3>Habib kurniawan</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>"Hidup ini seperti secangkir kopi di mana pahit dan manis bertemu dalam kehangatan"</p>
+            <p>Instagram: @sydalfhi_</p>
+            <img src="images/pic-5.png" class="user" alt="">
+            <h3>Syaid Alfarishi</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p> "Karena dari kopi kita belajar, bahwa rasa pahit itu dapat dinikmati"</p>
+            <p>Instagram : @rahadianlan_</p>
+            <img src="images/pic-6.png" class="user" alt="">
+            <h3>Galan Rahadian</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+         <a href="https://www.google.com/maps/place/SMK+Negeri+2+Padang+Panjang,+Ganting,+Kec.+Padang+Panjang+Tim.,+Kota+Padang+Panjang,+Sumatera+Barat+27111/@-0.4623863,100.4208391,17z/data=!4m5!3m4!1s0x2fd5256a42809263:0x83bcff4acf01d06b!8m2!3d-0.4625937!4d100.4208677?source=mlgmmupgrade" class="hay" >click location<img class="peta" src="images/map.png" alt="map"></a>
+
+        <form action="">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="number">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-1.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Coffee Teman Nongkrong</a>
+                <span>by Habib Kurniawan / 26 Desember, 2005</span>
+                <p>Kopi aja bisa bikin deg degan apa lagi kamu CHUAAAKS</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-2.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title"> coffee Nikmat senikmat bersamamu.</a>
+                <span>by Habib Kurniawan / 26 desember, 2005</span>
+                <p>Jika hidupmu terasa pahit berarti kopimu kurang gula.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-3.jpeg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title"> coffee enak dan Menyegarkan</a>
+                <span>by Habib Kurniawan / 26 desember, 2005</span>
+                <p>Kopi ini tak lagi butuh gula jika kau ada di hadapanku.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="https://instagram.com/habib.krnwnn?igshid=YmMyMTA2M2Y=" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">menu</a>
+        <a href="#">products</a>
+        <a href="#">review</a>
+        <a href="#">contact</a>
+        <a href="#">blogs</a>
+    </div>
+
+    <div class="credit">created by <span>Habib Kurniawan</span> | Dibuat Pada kamis, 16 Agustus 1945</div>
+
+</section>
+
+<!-- footer section ends -->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
